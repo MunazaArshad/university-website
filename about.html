@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eduford </title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <!-- header section -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Course</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <div class="text-box">
+            <h1> World's Biggest University </h1>
+            <p> Making website is now one of the easiest thing in the world .
+                <br> you just need to learn html,css, and javascript <br>
+                and you are good to go </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+
+    </section>
+    
+<!-- java script for toggle menu-->
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu (){
+        navLinks.style.right = "0"
+    }
+    function hideMenu (){
+        navLinks.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
