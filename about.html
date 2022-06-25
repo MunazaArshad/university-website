@@ -8,10 +8,14 @@
     <title>Eduford </title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
 </head>
 <body>
     <!-- header section -->
-    <section class="header">
+    <section class="sub-header">
         <nav>
             <a href="index.html"><img src="images/logo.png" ></a>
             <div class="nav-links" id="navLinks">
@@ -26,25 +30,47 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()" ></i>
         </nav>
-        <div class="text-box">
-            <h1> World's Biggest University </h1>
-            <p> Making website is now one of the easiest thing in the world .
-                <br> you just need to learn html,css, and javascript <br>
-                and you are good to go </p>
-            <a href="" class="hero-btn">Visit Us To Know More</a>
+        <h1>About Us </h1>
+    </section>
+    <!-- about us content -->
+    <section  class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1> we are the worlds largest university</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p>
+                <a href="" class="hero-btn red-btn"> Explore now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+                
+            </div>
         </div>
 
     </section>
-    
+ 
+    <!-- footer -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi <br>
+        assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati <br> consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p>
+        <div class="icons">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p> Created by <a href="https://github.com/MunazaArshad">Munaza Arshad</a></p>
+    </section>
+
 <!-- java script for toggle menu-->
-<script>
-    var navLinks = document.getElementById("navLinks")
-    function showMenu (){
-        navLinks.style.right = "0"
-    }
-    function hideMenu (){
-        navLinks.style.right = "-200px"
-    }
-</script>
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu (){
+            navLinks.style.right = "0"
+        }
+        function hideMenu (){
+            navLinks.style.right = "-200px"
+        }
+    </script>
 </body>
 </html>
