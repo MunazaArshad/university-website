@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
 </head>
 <body>
+    <!-- header section -->
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png" ></a>
-            <div class="nav-links">
-                <i class="fa fa-times" ></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html">About</a></li>
@@ -23,7 +24,7 @@
                     <li><a href="index.html">Contact</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" ></i>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
         </nav>
         <div class="text-box">
             <h1> World's Biggest University </h1>
@@ -34,6 +35,35 @@
         </div>
 
     </section>
+    <!-- course section -->
+    <section class="course">
+        <h1> Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate </h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p>
+            </div>
+            <div class="course-col">
+                <h3>Under Graduate </h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p>
+            </div>
+            <div class="course-col">
+                <h3>post graduation </h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p>
+            </div>
+        </div>
+    </section>
     
+<!-- java script for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu (){
+            navLinks.style.right = "0"
+        }
+        function hideMenu (){
+            navLinks.style.right = "-200px"
+        }
+    </script>
 </body>
 </html>
