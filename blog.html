@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Courses </title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+</head>
+<body>
+    <!-- header section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <h1> Our Certificate and online program for 2022</h1>
+    </section>
+    <!-- blog- content -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" >
+                <h1> Our Certificate and online program for 2022</h1>
+                <p>lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi
+                assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p> <br>
+                <p>lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p> <br>
+                <p>lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p> <br>
+                <p>lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi
+                assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p>
+                <div class="comment-box">
+                    <h3>leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter name ">
+                        <input type="email" placeholder="Enter email ">
+                        <textarea  rows="5" placeholder="your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">post comment</button>
+                    </form>                    
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3> post categories</h3>
+                <div>
+                    <span>Bussiness analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span> data Science </span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>  Machine learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span> computer science</span>
+                    <span>23</span>
+                </div>
+                <div>
+                    <span>auto cad</span>
+                    <span>31</span>
+                </div>
+                <div>
+                    <span>generilisim</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>commerece </span>
+                    <span>17</span>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- footer -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi <br>
+        assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati <br> consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p>
+        <div class="icons">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p> Created by <a href="https://github.com/MunazaArshad">Munaza Arshad</a></p>
+    </section>
+
+<!-- java script for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu (){
+            navLinks.style.right = "0"
+        }
+        function hideMenu (){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
